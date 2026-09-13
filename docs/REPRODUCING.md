@@ -14,37 +14,44 @@ pip install -r requirements.txt
 R (>= 4.5) with the `lme4` package is required only for the GLMM analysis
 (`src/mixed_models.py`); everything else is pure Python.
 
-## 2. Obtain the raw images
+## 2. Obtain the raw images and build the working dataset
 
-Download the two public collections and the DENTEX detection benchmark (see
+Download and extract the two public collections (see
 [Data availability](../README.md#data-availability) in the main README for
-links).
+links):
 
-**Important:** our own working copies had been reorganized by hand before
-this study (images sorted into `good` / `bad` / `normal` folders, central
-crop applied) — this reorganization is *not* itself scripted in this
-repository. To rebuild an equivalent working set:
+- **Source A**, "Children's teeth - supplement": extract it, and note the
+  folder that directly contains `img/` (the archive wraps everything in one
+  extra top-level folder — pass the folder *containing* `img/`, not the
+  archive root).
+- **Source B**, "Children's Dental Panoramic Radiographs Dataset": extract
+  it, and note the folder that directly contains
+  `Children's dental caries segmentation dataset/`.
 
-1. Extract both Figshare collections.
-2. For each of the 287 cases in `labels/pediatric_urgency_labels.csv`, locate
-   the file at `original_subfolder`/`original_filename` inside the
-   collection named in `figshare_dataset_title`.
-3. Sort each case into a `bad` (urgent) / `good` or `normal` (non-urgent)
-   folder under a working directory of your choice, mirroring the structure
-   `config.py` expects (`RAW_DATA`, `HEPSI_DIR`, `SRC_A`, `SRC_B` — see the
-   comments in `config.py`). The urgency label to use for sorting is exactly
-   `consensus_urgency_label` from the labels file; you do not need to
-   re-derive it.
-4. Apply a central crop to the dento-alveolar region of each image (Methods
-   3.2, step 1) and place the result under `CROP_DIR`.
-5. Download DENTEX and place it under `DENTEX_DIR` if you also intend to
-   retrain the caries detector from scratch (optional — the fine-tuned
-   detector is already included at `model_weights/caries_detector_yolov8l.pt`).
-
-## 3. Preprocessing, splitting, and detection features
+Then build `data/manifest.csv` and the preprocessed image set in one step:
 
 ```bash
-python -m src.data_prep          # dedup + manifest + CLAHE/NLM preprocessing
+python -m src.build_dataset_from_release \
+    --source-a /path/to/extracted/source_a \
+    --source-b /path/to/extracted/source_b
+```
+
+This locates every one of the 287 cases by the exact file name published in
+each collection (`labels/pediatric_urgency_labels.csv`), applies the same
+central crop used throughout the study (`data/crop_lookup.csv`, verified
+byte-for-byte against the crops used for the reported results, no manual
+step), then the same resize/CLAHE/NLM preprocessing as Methods 3.2, and
+writes `data/manifest.csv` with `patient_id` set to the public `case_id` —
+no internal identifier is introduced at this stage. Any case it cannot find
+is reported by path so you can check `--source-a`/`--source-b`.
+
+Download DENTEX and place it under `DENTEX_DIR` only if you also intend to
+retrain the caries detector from scratch (optional — the fine-tuned detector
+is already included at `model_weights/caries_detector_yolov8l.pt`).
+
+## 3. Splitting and detection features
+
+```bash
 python -m src.splits             # patient-level nested-CV splits + leakage assertions
 python -m src.detection_features # run the frozen detector, build the 12-/20-D feature table
 ```

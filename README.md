@@ -25,8 +25,12 @@ predictions, configurations, metrics, and all statistical comparisons. See
 
 **2. Reproduce the full pipeline from raw images.** Requires downloading the
 two public radiograph collections yourself (not redistributed here, see
-[Data availability](#data-availability)) and following
-[docs/REPRODUCING.md](docs/REPRODUCING.md).
+[Data availability](#data-availability)). One command
+(`python -m src.build_dataset_from_release`) locates every case by its
+published file name, applies the exact preprocessing pipeline (the central
+crop is reproduced byte-for-byte, see `data/crop_lookup.csv`), and builds
+`data/manifest.csv` with no manual sorting step and no internal identifier —
+see [docs/REPRODUCING.md](docs/REPRODUCING.md).
 
 ## Repository structure
 
@@ -45,7 +49,8 @@ runs/<model>/fold_<k>/      per-fold, per-model: best_config.json, metrics.json,
 results/                    aggregated tables, statistical comparisons, figures
 labels/                     the public label release (see below)
 reports/                    consolidated result workbooks (.xlsx)
-data/                       small derived files (detection features, dedup log)
+data/                       small derived files (detection features, dedup log,
+                            crop_lookup.csv used to reproduce preprocessing exactly)
 docs/                       data-provenance verification, reproduction guide
 ```
 
