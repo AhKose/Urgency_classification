@@ -1,0 +1,59 @@
+{
+  "model": "yolo_tl",
+  "fold": 4,
+  "config": {
+    "dropout_rate": 0.5,
+    "unfreeze_level": 2,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.0,
+    "use_focal_loss": false,
+    "scheduler": "onecycle",
+    "batch_size": 8,
+    "hidden_size": 256,
+    "stage_epochs": [
+      5,
+      15,
+      20
+    ]
+  },
+  "inner": {
+    "f1_macro": 0.8165242165242166,
+    "f1_non_urgent": 0.7407407407407407
+  },
+  "refit_val_f1_macro": 0.7745098039215685,
+  "test_metrics": {
+    "accuracy": 0.7368421052631579,
+    "balanced_accuracy": 0.7142857142857142,
+    "mcc": 0.3954372976473721,
+    "f1_macro": 0.6907775768535263,
+    "f1_weighted": 0.7473113162653469,
+    "precision_urgent": 0.8648648648648649,
+    "recall_urgent": 0.7619047619047619,
+    "f1_urgent": 0.810126582278481,
+    "support_urgent": 42,
+    "precision_non_urgent": 0.5,
+    "recall_non_urgent": 0.6666666666666666,
+    "f1_non_urgent": 0.5714285714285714,
+    "support_non_urgent": 15,
+    "roc_auc": 0.8714285714285714,
+    "pr_auc_non_urgent": 0.7300461963441502,
+    "pr_auc_urgent": 0.9536475279757709,
+    "confusion_matrix": [
+      [
+        32,
+        10
+      ],
+      [
+        5,
+        10
+      ]
+    ]
+  },
+  "class_count_final_train": [
+    135.0,
+    49.0
+  ],
+  "epochs_done": 22,
+  "minutes": 11.7
+}

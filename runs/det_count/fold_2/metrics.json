@@ -1,0 +1,40 @@
+{
+  "model": "det_count",
+  "fold": 2,
+  "config": {
+    "clf": "logreg",
+    "C": 0.14771703876091025
+  },
+  "inner": {
+    "f1_macro": 0.7855477855477855
+  },
+  "test_metrics": {
+    "accuracy": 0.7586206896551724,
+    "balanced_accuracy": 0.6592261904761905,
+    "mcc": 0.35136588944826574,
+    "f1_macro": 0.6704545454545454,
+    "f1_weighted": 0.7468652037617555,
+    "precision_urgent": 0.8043478260869565,
+    "recall_urgent": 0.8809523809523809,
+    "f1_urgent": 0.8409090909090909,
+    "support_urgent": 42,
+    "precision_non_urgent": 0.5833333333333334,
+    "recall_non_urgent": 0.4375,
+    "f1_non_urgent": 0.5,
+    "support_non_urgent": 16,
+    "roc_auc": 0.8258928571428572,
+    "pr_auc_non_urgent": 0.6579305548950767,
+    "pr_auc_urgent": 0.9217542662454008,
+    "confusion_matrix": [
+      [
+        37,
+        5
+      ],
+      [
+        9,
+        7
+      ]
+    ]
+  },
+  "minutes": 0.01
+}

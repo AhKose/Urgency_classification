@@ -1,0 +1,13 @@
+{
+  "model": "det_count_sp",
+  "best_params": {
+    "clf": "mlp",
+    "hidden": [
+      64,
+      16
+    ],
+    "alpha": 0.0006706322521551016,
+    "lr": 0.0007166432953436667
+  },
+  "best_inner_f1_macro": 0.8308823529411764
+}

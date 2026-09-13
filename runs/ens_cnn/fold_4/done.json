@@ -1,0 +1,33 @@
+{
+  "model": "ens_cnn",
+  "fold": 4,
+  "test_metrics": {
+    "accuracy": 0.7368421052631579,
+    "balanced_accuracy": 0.7142857142857142,
+    "mcc": 0.3954372976473721,
+    "f1_macro": 0.6907775768535263,
+    "f1_weighted": 0.7473113162653469,
+    "precision_urgent": 0.8648648648648649,
+    "recall_urgent": 0.7619047619047619,
+    "f1_urgent": 0.810126582278481,
+    "support_urgent": 42,
+    "precision_non_urgent": 0.5,
+    "recall_non_urgent": 0.6666666666666666,
+    "f1_non_urgent": 0.5714285714285714,
+    "support_non_urgent": 15,
+    "roc_auc": 0.8698412698412699,
+    "pr_auc_non_urgent": 0.774970721709852,
+    "pr_auc_urgent": 0.9449186441638194,
+    "confusion_matrix": [
+      [
+        32,
+        10
+      ],
+      [
+        5,
+        10
+      ]
+    ]
+  },
+  "config": {}
+}

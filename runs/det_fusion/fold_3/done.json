@@ -1,0 +1,35 @@
+{
+  "model": "det_fusion",
+  "fold": 3,
+  "test_metrics": {
+    "accuracy": 0.8245614035087719,
+    "balanced_accuracy": 0.8380952380952381,
+    "mcc": 0.6172746282994729,
+    "f1_macro": 0.7970085470085471,
+    "f1_weighted": 0.8324336482231219,
+    "precision_urgent": 0.9444444444444444,
+    "recall_urgent": 0.8095238095238095,
+    "f1_urgent": 0.8717948717948718,
+    "support_urgent": 42,
+    "precision_non_urgent": 0.6190476190476191,
+    "recall_non_urgent": 0.8666666666666667,
+    "f1_non_urgent": 0.7222222222222222,
+    "support_non_urgent": 15,
+    "roc_auc": 0.9079365079365079,
+    "pr_auc_non_urgent": 0.7568572631072631,
+    "pr_auc_urgent": 0.9682526413610867,
+    "confusion_matrix": [
+      [
+        34,
+        8
+      ],
+      [
+        2,
+        13
+      ]
+    ]
+  },
+  "config": {
+    "weight_detcount": 0.5
+  }
+}

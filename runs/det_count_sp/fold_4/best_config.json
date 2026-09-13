@@ -1,0 +1,11 @@
+{
+  "model": "det_count_sp",
+  "best_params": {
+    "clf": "hgb",
+    "max_depth": 2,
+    "hgb_lr": 0.0165611656437672,
+    "max_iter": 298,
+    "l2": 1.0796160522418643e-05
+  },
+  "best_inner_f1_macro": 0.8077611940298508
+}

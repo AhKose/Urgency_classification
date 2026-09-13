@@ -1,0 +1,8 @@
+{
+  "model": "det_count",
+  "best_params": {
+    "clf": "logreg",
+    "C": 0.14771703876091025
+  },
+  "best_inner_f1_macro": 0.7855477855477855
+}

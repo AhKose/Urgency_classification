@@ -1,0 +1,138 @@
+{
+  "n": 287,
+  "n_disagreements": 13,
+  "n_consensus_changed_vs_rater1": 7,
+  "percent_agreement": {
+    "value": 0.9547038327526133,
+    "ci95": [
+      0.9303135888501742,
+      0.975609756097561
+    ]
+  },
+  "cohen_kappa": {
+    "value": 0.8800899887514062,
+    "ci95": [
+      0.8101764592093811,
+      0.9386592994432785
+    ]
+  },
+  "pabak": {
+    "value": 0.9094076655052266,
+    "ci95": [
+      0.8606271777003485,
+      0.9512195121951219
+    ]
+  },
+  "gwet_ac1": {
+    "value": 0.9272234305053008,
+    "ci95": [
+      0.8850466268596737,
+      0.9632270168855535
+    ]
+  },
+  "confusion_rater1_rows_rater2_cols": [
+    [
+      208,
+      4
+    ],
+    [
+      9,
+      66
+    ]
+  ],
+  "disagreements": [
+    {
+      "patient_id": "bad_20",
+      "source": "B",
+      "rater1": "urgent",
+      "rater2": "non_urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "bad_206",
+      "source": "B",
+      "rater1": "urgent",
+      "rater2": "non_urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "bad_28",
+      "source": "B",
+      "rater1": "urgent",
+      "rater2": "non_urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "bad_95",
+      "source": "B",
+      "rater1": "urgent",
+      "rater2": "non_urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "good_17",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "urgent"
+    },
+    {
+      "patient_id": "good_22",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "urgent"
+    },
+    {
+      "patient_id": "normal_13",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "normal_14",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "normal_17",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "normal_23",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "normal_24",
+      "source": "A",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "urgent"
+    },
+    {
+      "patient_id": "normal_36",
+      "source": "B",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "non_urgent"
+    },
+    {
+      "patient_id": "normal_40",
+      "source": "B",
+      "rater1": "non_urgent",
+      "rater2": "urgent",
+      "consensus": "non_urgent"
+    }
+  ],
+  "rater1_urgent": 212,
+  "rater2_urgent": 217
+}

@@ -1,0 +1,1922 @@
+{
+  "yolo_tl": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8286821705426357,
+        "sd": 0.17048716576440917
+      },
+      "specificity": {
+        "mean": 0.39749999999999996,
+        "sd": 0.3039611177619781
+      },
+      "npv": {
+        "mean": 0.5145833333333333,
+        "sd": 0.16154903366401724
+      },
+      "ppv": {
+        "mean": 0.8060900178253119,
+        "sd": 0.0740125055214368
+      },
+      "cleared_fraction": {
+        "mean": 0.23079249848759834,
+        "sd": 0.20098652028184658
+      },
+      "missed_urgent_total": 36,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.9767441860465116,
+          "specificity": 0.13333333333333333,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7636363636363637,
+          "cleared_fraction": 0.05172413793103448,
+          "missed_urgent": 1,
+          "n_urgent": 43,
+          "threshold_on_val": 0.5
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.1875,
+          "npv": 0.3,
+          "ppv": 0.7291666666666666,
+          "cleared_fraction": 0.1724137931034483,
+          "missed_urgent": 7,
+          "n_urgent": 42,
+          "threshold_on_val": 0.5
+        },
+        {
+          "thr": 0.73,
+          "sensitivity": 0.5476190476190477,
+          "specificity": 0.8666666666666667,
+          "npv": 0.40625,
+          "ppv": 0.92,
+          "cleared_fraction": 0.5614035087719298,
+          "missed_urgent": 19,
+          "n_urgent": 42,
+          "threshold_on_val": 0.73
+        },
+        {
+          "thr": 0.385,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5333333333333333,
+          "npv": 0.5333333333333333,
+          "ppv": 0.8333333333333334,
+          "cleared_fraction": 0.2631578947368421,
+          "missed_urgent": 7,
+          "n_urgent": 42,
+          "threshold_on_val": 0.385
+        },
+        {
+          "thr": 0.35500000000000004,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.26666666666666666,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7843137254901961,
+          "cleared_fraction": 0.10526315789473684,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.35500000000000004
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.9239202657807308,
+        "sd": 0.08980228207031854
+      },
+      "specificity": {
+        "mean": 0.21166666666666667,
+        "sd": 0.256282179551282
+      },
+      "npv": {
+        "mean": 0.5957393483709273,
+        "sd": 0.26389323208823057
+      },
+      "ppv": {
+        "mean": 0.7706004315601839,
+        "sd": 0.05636709781105413
+      },
+      "cleared_fraction": {
+        "mean": 0.11167574107683002,
+        "sd": 0.12993659006713681
+      },
+      "missed_urgent_total": 16,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.48500000000000004,
+          "sensitivity": 0.9767441860465116,
+          "specificity": 0.13333333333333333,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7636363636363637,
+          "cleared_fraction": 0.05172413793103448,
+          "missed_urgent": 1,
+          "n_urgent": 43,
+          "threshold_on_val": 0.48500000000000004
+        },
+        {
+          "thr": 0.48500000000000004,
+          "sensitivity": 0.8809523809523809,
+          "specificity": 0.125,
+          "npv": 0.2857142857142857,
+          "ppv": 0.7254901960784313,
+          "cleared_fraction": 0.1206896551724138,
+          "missed_urgent": 5,
+          "n_urgent": 42,
+          "threshold_on_val": 0.48500000000000004
+        },
+        {
+          "thr": 0.48000000000000004,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.6666666666666666,
+          "npv": 0.5263157894736842,
+          "ppv": 0.868421052631579,
+          "cleared_fraction": 0.3333333333333333,
+          "missed_urgent": 9,
+          "n_urgent": 42,
+          "threshold_on_val": 0.48000000000000004
+        },
+        {
+          "thr": 0.17,
+          "sensitivity": 1.0,
+          "specificity": 0.06666666666666667,
+          "npv": 1.0,
+          "ppv": 0.75,
+          "cleared_fraction": 0.017543859649122806,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.17
+        },
+        {
+          "thr": 0.33,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.06666666666666667,
+          "npv": 0.5,
+          "ppv": 0.7454545454545455,
+          "cleared_fraction": 0.03508771929824561,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.33
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.8096345514950165,
+        "sd": 0.10669616810199656
+      },
+      "specificity": {
+        "mean": 0.49083333333333334,
+        "sd": 0.30709774954853997
+      },
+      "npv": {
+        "mean": 0.49459649122807015,
+        "sd": 0.13107660834237303
+      },
+      "ppv": {
+        "mean": 0.8264677895598949,
+        "sd": 0.0758533278388529
+      },
+      "cleared_fraction": {
+        "mean": 0.2693889897156685,
+        "sd": 0.1550343198946754
+      },
+      "missed_urgent_total": 40,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.9767441860465116,
+          "specificity": 0.13333333333333333,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7636363636363637,
+          "cleared_fraction": 0.05172413793103448,
+          "missed_urgent": 1,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.1875,
+          "npv": 0.3,
+          "ppv": 0.7291666666666666,
+          "cleared_fraction": 0.1724137931034483,
+          "missed_urgent": 7,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.6666666666666666,
+          "npv": 0.5263157894736842,
+          "ppv": 0.868421052631579,
+          "cleared_fraction": 0.3333333333333333,
+          "missed_urgent": 9,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7619047619047619,
+          "specificity": 0.6666666666666666,
+          "npv": 0.5,
+          "ppv": 0.8648648648648649,
+          "cleared_fraction": 0.3508771929824561,
+          "missed_urgent": 10,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.6904761904761905,
+          "specificity": 0.8,
+          "npv": 0.48,
+          "ppv": 0.90625,
+          "cleared_fraction": 0.43859649122807015,
+          "missed_urgent": 13,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "resnet50v2": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8959025470653378,
+        "sd": 0.07218750029116533
+      },
+      "specificity": {
+        "mean": 0.27749999999999997,
+        "sd": 0.060351976861666344
+      },
+      "npv": {
+        "mean": 0.52995670995671,
+        "sd": 0.12335626778232382
+      },
+      "ppv": {
+        "mean": 0.774741321928116,
+        "sd": 0.013505638041212756
+      },
+      "cleared_fraction": {
+        "mean": 0.1499092558983666,
+        "sd": 0.06619089555300826
+      },
+      "missed_urgent_total": 22,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.49,
+          "sensitivity": 0.8604651162790697,
+          "specificity": 0.3333333333333333,
+          "npv": 0.45454545454545453,
+          "ppv": 0.7872340425531915,
+          "cleared_fraction": 0.1896551724137931,
+          "missed_urgent": 6,
+          "n_urgent": 43,
+          "threshold_on_val": 0.49
+        },
+        {
+          "thr": 0.365,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.1875,
+          "npv": 0.6,
+          "ppv": 0.7547169811320755,
+          "cleared_fraction": 0.08620689655172414,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.365
+        },
+        {
+          "thr": 0.495,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.26666666666666666,
+          "npv": 0.5714285714285714,
+          "ppv": 0.78,
+          "cleared_fraction": 0.12280701754385964,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.495
+        },
+        {
+          "thr": 0.385,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.26666666666666666,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7843137254901961,
+          "cleared_fraction": 0.10526315789473684,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.385
+        },
+        {
+          "thr": 0.43,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.3333333333333333,
+          "npv": 0.35714285714285715,
+          "ppv": 0.7674418604651163,
+          "cleared_fraction": 0.24561403508771928,
+          "missed_urgent": 9,
+          "n_urgent": 42,
+          "threshold_on_val": 0.43
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.9337763012181618,
+        "sd": 0.03872922390690111
+      },
+      "specificity": {
+        "mean": 0.19833333333333333,
+        "sd": 0.09581521567869872
+      },
+      "npv": {
+        "mean": 0.5333333333333334,
+        "sd": 0.08425417160057277
+      },
+      "ppv": {
+        "mean": 0.7642937363624696,
+        "sd": 0.020704392146643595
+      },
+      "cleared_fraction": {
+        "mean": 0.10096793708408953,
+        "sd": 0.05120430202338094
+      },
+      "missed_urgent_total": 14,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.405,
+          "sensitivity": 0.9069767441860465,
+          "specificity": 0.3333333333333333,
+          "npv": 0.5555555555555556,
+          "ppv": 0.7959183673469388,
+          "cleared_fraction": 0.15517241379310345,
+          "missed_urgent": 4,
+          "n_urgent": 43,
+          "threshold_on_val": 0.405
+        },
+        {
+          "thr": 0.34,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.125,
+          "npv": 0.5,
+          "ppv": 0.7407407407407407,
+          "cleared_fraction": 0.06896551724137931,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.34
+        },
+        {
+          "thr": 0.47000000000000003,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.13333333333333333,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7592592592592593,
+          "cleared_fraction": 0.05263157894736842,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.47000000000000003
+        },
+        {
+          "thr": 0.37,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.13333333333333333,
+          "npv": 0.5,
+          "ppv": 0.7547169811320755,
+          "cleared_fraction": 0.07017543859649122,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.37
+        },
+        {
+          "thr": 0.4,
+          "sensitivity": 0.8809523809523809,
+          "specificity": 0.26666666666666666,
+          "npv": 0.4444444444444444,
+          "ppv": 0.7708333333333334,
+          "cleared_fraction": 0.15789473684210525,
+          "missed_urgent": 5,
+          "n_urgent": 42,
+          "threshold_on_val": 0.4
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.5817275747508306,
+        "sd": 0.2843898776825606
+      },
+      "specificity": {
+        "mean": 0.5241666666666667,
+        "sd": 0.2793904575639221
+      },
+      "npv": {
+        "mean": 0.35409131803868643,
+        "sd": 0.12257891235078154
+      },
+      "ppv": {
+        "mean": 0.7878293135435992,
+        "sd": 0.08152526680982156
+      },
+      "cleared_fraction": {
+        "mean": 0.44603750756200855,
+        "sd": 0.27613121813396735
+      },
+      "missed_urgent_total": 88,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8372093023255814,
+          "specificity": 0.4,
+          "npv": 0.46153846153846156,
+          "ppv": 0.8,
+          "cleared_fraction": 0.22413793103448276,
+          "missed_urgent": 7,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.35714285714285715,
+          "specificity": 0.6875,
+          "npv": 0.2894736842105263,
+          "ppv": 0.75,
+          "cleared_fraction": 0.6551724137931034,
+          "missed_urgent": 27,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.9047619047619048,
+          "specificity": 0.26666666666666666,
+          "npv": 0.5,
+          "ppv": 0.7755102040816326,
+          "cleared_fraction": 0.14035087719298245,
+          "missed_urgent": 4,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.2619047619047619,
+          "specificity": 0.9333333333333333,
+          "npv": 0.3111111111111111,
+          "ppv": 0.9166666666666666,
+          "cleared_fraction": 0.7894736842105263,
+          "missed_urgent": 31,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.5476190476190477,
+          "specificity": 0.3333333333333333,
+          "npv": 0.20833333333333334,
+          "ppv": 0.696969696969697,
+          "cleared_fraction": 0.42105263157894735,
+          "missed_urgent": 19,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "efficientnet_b3": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8672203765227021,
+        "sd": 0.04349777723452485
+      },
+      "specificity": {
+        "mean": 0.20916666666666667,
+        "sd": 0.14814829282400344
+      },
+      "npv": {
+        "mean": 0.3388278388278388,
+        "sd": 0.21074212254421282
+      },
+      "ppv": {
+        "mean": 0.7537649572649572,
+        "sd": 0.035833162596619894
+      },
+      "cleared_fraction": {
+        "mean": 0.15323653962492437,
+        "sd": 0.046030511427316796
+      },
+      "missed_urgent_total": 28,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.445,
+          "sensitivity": 0.8837209302325582,
+          "specificity": 0.06666666666666667,
+          "npv": 0.16666666666666666,
+          "ppv": 0.7307692307692307,
+          "cleared_fraction": 0.10344827586206896,
+          "missed_urgent": 5,
+          "n_urgent": 43,
+          "threshold_on_val": 0.445
+        },
+        {
+          "thr": 0.55,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.3125,
+          "npv": 0.38461538461538464,
+          "ppv": 0.7555555555555555,
+          "cleared_fraction": 0.22413793103448276,
+          "missed_urgent": 8,
+          "n_urgent": 42,
+          "threshold_on_val": 0.55
+        },
+        {
+          "thr": 0.47000000000000003,
+          "sensitivity": 0.8571428571428571,
+          "specificity": 0.2,
+          "npv": 0.3333333333333333,
+          "ppv": 0.75,
+          "cleared_fraction": 0.15789473684210525,
+          "missed_urgent": 6,
+          "n_urgent": 42,
+          "threshold_on_val": 0.47000000000000003
+        },
+        {
+          "thr": 0.47000000000000003,
+          "sensitivity": 0.8571428571428571,
+          "specificity": 0.06666666666666667,
+          "npv": 0.14285714285714285,
+          "ppv": 0.72,
+          "cleared_fraction": 0.12280701754385964,
+          "missed_urgent": 6,
+          "n_urgent": 42,
+          "threshold_on_val": 0.47000000000000003
+        },
+        {
+          "thr": 0.265,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.4,
+          "npv": 0.6666666666666666,
+          "ppv": 0.8125,
+          "cleared_fraction": 0.15789473684210525,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.265
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.9572535991140644,
+        "sd": 0.031129625230364538
+      },
+      "specificity": {
+        "mean": 0.1325,
+        "sd": 0.13386612300686418
+      },
+      "npv": {
+        "mean": 0.5428571428571429,
+        "sd": 0.3663108972845167
+      },
+      "ppv": {
+        "mean": 0.7547540419676644,
+        "sd": 0.029782518080261482
+      },
+      "cleared_fraction": {
+        "mean": 0.06648517846339988,
+        "sd": 0.0455985473906475
+      },
+      "missed_urgent_total": 9,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.4,
+          "sensitivity": 0.9767441860465116,
+          "specificity": 0.06666666666666667,
+          "npv": 0.5,
+          "ppv": 0.75,
+          "cleared_fraction": 0.034482758620689655,
+          "missed_urgent": 1,
+          "n_urgent": 43,
+          "threshold_on_val": 0.4
+        },
+        {
+          "thr": 0.395,
+          "sensitivity": 1.0,
+          "specificity": 0.0625,
+          "npv": 1.0,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.017241379310344827,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.395
+        },
+        {
+          "thr": 0.435,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.2,
+          "npv": 0.5,
+          "ppv": 0.7647058823529411,
+          "cleared_fraction": 0.10526315789473684,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.435
+        },
+        {
+          "thr": 0.46,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.0,
+          "npv": 0.0,
+          "ppv": 0.7222222222222222,
+          "cleared_fraction": 0.05263157894736842,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.46
+        },
+        {
+          "thr": 0.25,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.3333333333333333,
+          "npv": 0.7142857142857143,
+          "ppv": 0.8,
+          "cleared_fraction": 0.12280701754385964,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.25
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.7055370985603544,
+        "sd": 0.20237371842249358
+      },
+      "specificity": {
+        "mean": 0.46416666666666656,
+        "sd": 0.28191433884150774
+      },
+      "npv": {
+        "mean": 0.36822014322014324,
+        "sd": 0.06499393267187209
+      },
+      "ppv": {
+        "mean": 0.7945217391304348,
+        "sd": 0.06374245201618713
+      },
+      "cleared_fraction": {
+        "mean": 0.3391409558378705,
+        "sd": 0.21476811249145394
+      },
+      "missed_urgent_total": 62,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8372093023255814,
+          "specificity": 0.3333333333333333,
+          "npv": 0.4166666666666667,
+          "ppv": 0.782608695652174,
+          "cleared_fraction": 0.20689655172413793,
+          "missed_urgent": 7,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8809523809523809,
+          "specificity": 0.1875,
+          "npv": 0.375,
+          "ppv": 0.74,
+          "cleared_fraction": 0.13793103448275862,
+          "missed_urgent": 5,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.26666666666666666,
+          "npv": 0.3076923076923077,
+          "ppv": 0.75,
+          "cleared_fraction": 0.22807017543859648,
+          "missed_urgent": 9,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.38095238095238093,
+          "specificity": 0.7333333333333333,
+          "npv": 0.2972972972972973,
+          "ppv": 0.8,
+          "cleared_fraction": 0.6491228070175439,
+          "missed_urgent": 26,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.8,
+          "npv": 0.4444444444444444,
+          "ppv": 0.9,
+          "cleared_fraction": 0.47368421052631576,
+          "missed_urgent": 15,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "yolo_coco": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8097452934662236,
+        "sd": 0.12517554012140922
+      },
+      "specificity": {
+        "mean": 0.3949999999999999,
+        "sd": 0.11601005703529901
+      },
+      "npv": {
+        "mean": 0.4771825396825397,
+        "sd": 0.1599100492774433
+      },
+      "ppv": {
+        "mean": 0.7885189774357636,
+        "sd": 0.02463512769868109
+      },
+      "cleared_fraction": {
+        "mean": 0.24434361766485177,
+        "sd": 0.1176015393795904
+      },
+      "missed_urgent_total": 40,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.39,
+          "sensitivity": 0.9534883720930233,
+          "specificity": 0.3333333333333333,
+          "npv": 0.7142857142857143,
+          "ppv": 0.803921568627451,
+          "cleared_fraction": 0.1206896551724138,
+          "missed_urgent": 2,
+          "n_urgent": 43,
+          "threshold_on_val": 0.39
+        },
+        {
+          "thr": 0.20500000000000002,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.375,
+          "npv": 0.42857142857142855,
+          "ppv": 0.7727272727272727,
+          "cleared_fraction": 0.2413793103448276,
+          "missed_urgent": 8,
+          "n_urgent": 42,
+          "threshold_on_val": 0.20500000000000002
+        },
+        {
+          "thr": 0.5700000000000001,
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.6,
+          "npv": 0.375,
+          "ppv": 0.8181818181818182,
+          "cleared_fraction": 0.42105263157894735,
+          "missed_urgent": 15,
+          "n_urgent": 42,
+          "threshold_on_val": 0.5700000000000001
+        },
+        {
+          "thr": 0.53,
+          "sensitivity": 0.9047619047619048,
+          "specificity": 0.3333333333333333,
+          "npv": 0.5555555555555556,
+          "ppv": 0.7916666666666666,
+          "cleared_fraction": 0.15789473684210525,
+          "missed_urgent": 4,
+          "n_urgent": 42,
+          "threshold_on_val": 0.53
+        },
+        {
+          "thr": 0.8,
+          "sensitivity": 0.7380952380952381,
+          "specificity": 0.3333333333333333,
+          "npv": 0.3125,
+          "ppv": 0.7560975609756098,
+          "cleared_fraction": 0.2807017543859649,
+          "missed_urgent": 11,
+          "n_urgent": 42,
+          "threshold_on_val": 0.8
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.8716500553709856,
+        "sd": 0.11994779295595445
+      },
+      "specificity": {
+        "mean": 0.2925,
+        "sd": 0.13177474467185787
+      },
+      "npv": {
+        "mean": 0.507938114517062,
+        "sd": 0.16467803929903999
+      },
+      "ppv": {
+        "mean": 0.7735735921162723,
+        "sd": 0.028486827952921925
+      },
+      "cleared_fraction": {
+        "mean": 0.17138535995160314,
+        "sd": 0.11370557400977419
+      },
+      "missed_urgent_total": 27,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.38,
+          "sensitivity": 0.9534883720930233,
+          "specificity": 0.3333333333333333,
+          "npv": 0.7142857142857143,
+          "ppv": 0.803921568627451,
+          "cleared_fraction": 0.1206896551724138,
+          "missed_urgent": 2,
+          "n_urgent": 43,
+          "threshold_on_val": 0.38
+        },
+        {
+          "thr": 0.05,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.0625,
+          "npv": 0.5,
+          "ppv": 0.7321428571428571,
+          "cleared_fraction": 0.034482758620689655,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.05
+        },
+        {
+          "thr": 0.51,
+          "sensitivity": 0.6904761904761905,
+          "specificity": 0.4,
+          "npv": 0.3157894736842105,
+          "ppv": 0.7631578947368421,
+          "cleared_fraction": 0.3333333333333333,
+          "missed_urgent": 13,
+          "n_urgent": 42,
+          "threshold_on_val": 0.51
+        },
+        {
+          "thr": 0.495,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.3333333333333333,
+          "npv": 0.625,
+          "ppv": 0.7959183673469388,
+          "cleared_fraction": 0.14035087719298245,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.495
+        },
+        {
+          "thr": 0.625,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.3333333333333333,
+          "npv": 0.38461538461538464,
+          "ppv": 0.7727272727272727,
+          "cleared_fraction": 0.22807017543859648,
+          "missed_urgent": 8,
+          "n_urgent": 42,
+          "threshold_on_val": 0.625
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.7679955703211518,
+        "sd": 0.11270886190813464
+      },
+      "specificity": {
+        "mean": 0.3916666666666666,
+        "sd": 0.15388487760516156
+      },
+      "npv": {
+        "mean": 0.3983333333333333,
+        "sd": 0.13181426326464069
+      },
+      "ppv": {
+        "mean": 0.7806023611646712,
+        "sd": 0.0278291666994105
+      },
+      "cleared_fraction": {
+        "mean": 0.27459165154264975,
+        "sd": 0.11758169862834371
+      },
+      "missed_urgent_total": 49,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7209302325581395,
+          "specificity": 0.4,
+          "npv": 0.3333333333333333,
+          "ppv": 0.775,
+          "cleared_fraction": 0.3103448275862069,
+          "missed_urgent": 12,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.625,
+          "npv": 0.4,
+          "ppv": 0.8181818181818182,
+          "cleared_fraction": 0.43103448275862066,
+          "missed_urgent": 15,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7142857142857143,
+          "specificity": 0.4,
+          "npv": 0.3333333333333333,
+          "ppv": 0.7692307692307693,
+          "cleared_fraction": 0.3157894736842105,
+          "missed_urgent": 12,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.3333333333333333,
+          "npv": 0.625,
+          "ppv": 0.7959183673469388,
+          "cleared_fraction": 0.14035087719298245,
+          "missed_urgent": 3,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.2,
+          "npv": 0.3,
+          "ppv": 0.7446808510638298,
+          "cleared_fraction": 0.17543859649122806,
+          "missed_urgent": 7,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "yolo_scratch": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "specificity": {
+        "mean": 0.013333333333333332,
+        "sd": 0.02981423969999719
+      },
+      "npv": {
+        "mean": 1.0,
+        "sd": NaN
+      },
+      "ppv": {
+        "mean": 0.7378100423472475,
+        "sd": 0.010776114132966422
+      },
+      "cleared_fraction": {
+        "mean": 0.0034482758620689655,
+        "sd": 0.007710579232757896
+      },
+      "missed_urgent_total": 0,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.505,
+          "sensitivity": 1.0,
+          "specificity": 0.06666666666666667,
+          "npv": 1.0,
+          "ppv": 0.7543859649122807,
+          "cleared_fraction": 0.017241379310344827,
+          "missed_urgent": 0,
+          "n_urgent": 43,
+          "threshold_on_val": 0.505
+        },
+        {
+          "thr": 0.5750000000000001,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7241379310344828,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.5750000000000001
+        },
+        {
+          "thr": 0.54,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.54
+        },
+        {
+          "thr": 0.535,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.535
+        },
+        {
+          "thr": 0.505,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.505
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "specificity": {
+        "mean": 0.013333333333333332,
+        "sd": 0.02981423969999719
+      },
+      "npv": {
+        "mean": 1.0,
+        "sd": NaN
+      },
+      "ppv": {
+        "mean": 0.7378100423472475,
+        "sd": 0.010776114132966422
+      },
+      "cleared_fraction": {
+        "mean": 0.0034482758620689655,
+        "sd": 0.007710579232757896
+      },
+      "missed_urgent_total": 0,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.505,
+          "sensitivity": 1.0,
+          "specificity": 0.06666666666666667,
+          "npv": 1.0,
+          "ppv": 0.7543859649122807,
+          "cleared_fraction": 0.017241379310344827,
+          "missed_urgent": 0,
+          "n_urgent": 43,
+          "threshold_on_val": 0.505
+        },
+        {
+          "thr": 0.5750000000000001,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7241379310344828,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.5750000000000001
+        },
+        {
+          "thr": 0.54,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.54
+        },
+        {
+          "thr": 0.535,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.535
+        },
+        {
+          "thr": 0.505,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.505
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "specificity": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "npv": {
+        "mean": NaN,
+        "sd": NaN
+      },
+      "ppv": {
+        "mean": 0.7352087114337569,
+        "sd": 0.006493119353901385
+      },
+      "cleared_fraction": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "missed_urgent_total": 0,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7413793103448276,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7241379310344828,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "npv": NaN,
+          "ppv": 0.7368421052631579,
+          "cleared_fraction": 0.0,
+          "missed_urgent": 0,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "det_count": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8767441860465116,
+        "sd": 0.0616953053162626
+      },
+      "specificity": {
+        "mean": 0.6075,
+        "sd": 0.19685901610599962
+      },
+      "npv": {
+        "mean": 0.6507015859957036,
+        "sd": 0.09020085688342935
+      },
+      "ppv": {
+        "mean": 0.8662661350807248,
+        "sd": 0.05665847976153066
+      },
+      "cleared_fraction": {
+        "mean": 0.2514216575922565,
+        "sd": 0.09208512043362765
+      },
+      "missed_urgent_total": 26,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.105,
+          "sensitivity": 0.8837209302325582,
+          "specificity": 0.4,
+          "npv": 0.5454545454545454,
+          "ppv": 0.8085106382978723,
+          "cleared_fraction": 0.1896551724137931,
+          "missed_urgent": 5,
+          "n_urgent": 43,
+          "threshold_on_val": 0.105
+        },
+        {
+          "thr": 0.4,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.4375,
+          "npv": 0.7777777777777778,
+          "ppv": 0.8163265306122449,
+          "cleared_fraction": 0.15517241379310345,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.4
+        },
+        {
+          "thr": 0.375,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.8666666666666667,
+          "npv": 0.5909090909090909,
+          "ppv": 0.9428571428571428,
+          "cleared_fraction": 0.38596491228070173,
+          "missed_urgent": 9,
+          "n_urgent": 42,
+          "threshold_on_val": 0.375
+        },
+        {
+          "thr": 0.385,
+          "sensitivity": 0.8571428571428571,
+          "specificity": 0.7333333333333333,
+          "npv": 0.6470588235294118,
+          "ppv": 0.9,
+          "cleared_fraction": 0.2982456140350877,
+          "missed_urgent": 6,
+          "n_urgent": 42,
+          "threshold_on_val": 0.385
+        },
+        {
+          "thr": 0.27,
+          "sensitivity": 0.9047619047619048,
+          "specificity": 0.6,
+          "npv": 0.6923076923076923,
+          "ppv": 0.8636363636363636,
+          "cleared_fraction": 0.22807017543859648,
+          "missed_urgent": 4,
+          "n_urgent": 42,
+          "threshold_on_val": 0.27
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.9336655592469546,
+        "sd": 0.048760118753347355
+      },
+      "specificity": {
+        "mean": 0.4116666666666666,
+        "sd": 0.24463691917252026
+      },
+      "npv": {
+        "mean": 0.6794372294372295,
+        "sd": 0.1327559734573045
+      },
+      "ppv": {
+        "mean": 0.8189615347536874,
+        "sd": 0.0632566274750606
+      },
+      "cleared_fraction": {
+        "mean": 0.15722928009679368,
+        "sd": 0.08545816369831417
+      },
+      "missed_urgent_total": 14,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.03,
+          "sensitivity": 0.9302325581395349,
+          "specificity": 0.3333333333333333,
+          "npv": 0.625,
+          "ppv": 0.8,
+          "cleared_fraction": 0.13793103448275862,
+          "missed_urgent": 3,
+          "n_urgent": 43,
+          "threshold_on_val": 0.03
+        },
+        {
+          "thr": 0.18500000000000003,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.125,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7454545454545455,
+          "cleared_fraction": 0.05172413793103448,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.18500000000000003
+        },
+        {
+          "thr": 0.265,
+          "sensitivity": 0.8571428571428571,
+          "specificity": 0.6666666666666666,
+          "npv": 0.625,
+          "ppv": 0.8780487804878049,
+          "cleared_fraction": 0.2807017543859649,
+          "missed_urgent": 6,
+          "n_urgent": 42,
+          "threshold_on_val": 0.265
+        },
+        {
+          "thr": 0.20500000000000002,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.6666666666666666,
+          "npv": 0.9090909090909091,
+          "ppv": 0.8913043478260869,
+          "cleared_fraction": 0.19298245614035087,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.20500000000000002
+        },
+        {
+          "thr": 0.12,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.26666666666666666,
+          "npv": 0.5714285714285714,
+          "ppv": 0.78,
+          "cleared_fraction": 0.12280701754385964,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.12
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.7583610188261352,
+        "sd": 0.07186676138078789
+      },
+      "specificity": {
+        "mean": 0.7141666666666666,
+        "sd": 0.17087397890453265
+      },
+      "npv": {
+        "mean": 0.5205859213250518,
+        "sd": 0.04472454020905702
+      },
+      "ppv": {
+        "mean": 0.8853242672456227,
+        "sd": 0.05252685908498969
+      },
+      "cleared_fraction": {
+        "mean": 0.3664246823956443,
+        "sd": 0.09359007594794289
+      },
+      "missed_urgent_total": 51,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7441860465116279,
+          "specificity": 0.6666666666666666,
+          "npv": 0.47619047619047616,
+          "ppv": 0.8648648648648649,
+          "cleared_fraction": 0.3620689655172414,
+          "missed_urgent": 11,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8809523809523809,
+          "specificity": 0.4375,
+          "npv": 0.5833333333333334,
+          "ppv": 0.8043478260869565,
+          "cleared_fraction": 0.20689655172413793,
+          "missed_urgent": 5,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7380952380952381,
+          "specificity": 0.8666666666666667,
+          "npv": 0.5416666666666666,
+          "ppv": 0.9393939393939394,
+          "cleared_fraction": 0.42105263157894735,
+          "missed_urgent": 11,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7380952380952381,
+          "specificity": 0.8,
+          "npv": 0.5217391304347826,
+          "ppv": 0.9117647058823529,
+          "cleared_fraction": 0.40350877192982454,
+          "missed_urgent": 11,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.6904761904761905,
+          "specificity": 0.8,
+          "npv": 0.48,
+          "ppv": 0.90625,
+          "cleared_fraction": 0.43859649122807015,
+          "missed_urgent": 13,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "det_count_sp": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8578073089700997,
+        "sd": 0.0734009196774693
+      },
+      "specificity": {
+        "mean": 0.6616666666666667,
+        "sd": 0.1859286003939266
+      },
+      "npv": {
+        "mean": 0.6412299465240642,
+        "sd": 0.10476275678086834
+      },
+      "ppv": {
+        "mean": 0.87968398863945,
+        "sd": 0.055917596663497195
+      },
+      "cleared_fraction": {
+        "mean": 0.2790683605565638,
+        "sd": 0.09429520742054988
+      },
+      "missed_urgent_total": 30,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.26,
+          "sensitivity": 0.8604651162790697,
+          "specificity": 0.7333333333333333,
+          "npv": 0.6470588235294118,
+          "ppv": 0.9024390243902439,
+          "cleared_fraction": 0.29310344827586204,
+          "missed_urgent": 6,
+          "n_urgent": 43,
+          "threshold_on_val": 0.26
+        },
+        {
+          "thr": 0.7000000000000001,
+          "sensitivity": 0.9047619047619048,
+          "specificity": 0.375,
+          "npv": 0.6,
+          "ppv": 0.7916666666666666,
+          "cleared_fraction": 0.1724137931034483,
+          "missed_urgent": 4,
+          "n_urgent": 42,
+          "threshold_on_val": 0.7000000000000001
+        },
+        {
+          "thr": 0.615,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.8666666666666667,
+          "npv": 0.5909090909090909,
+          "ppv": 0.9428571428571428,
+          "cleared_fraction": 0.38596491228070173,
+          "missed_urgent": 9,
+          "n_urgent": 42,
+          "threshold_on_val": 0.615
+        },
+        {
+          "thr": 0.265,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.6,
+          "npv": 0.8181818181818182,
+          "ppv": 0.8695652173913043,
+          "cleared_fraction": 0.19298245614035087,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.265
+        },
+        {
+          "thr": 0.34500000000000003,
+          "sensitivity": 0.7857142857142857,
+          "specificity": 0.7333333333333333,
+          "npv": 0.55,
+          "ppv": 0.8918918918918919,
+          "cleared_fraction": 0.3508771929824561,
+          "missed_urgent": 9,
+          "n_urgent": 42,
+          "threshold_on_val": 0.34500000000000003
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.9291251384274639,
+        "sd": 0.03678109151601997
+      },
+      "specificity": {
+        "mean": 0.3975,
+        "sd": 0.2031778777327886
+      },
+      "npv": {
+        "mean": 0.6545238095238096,
+        "sd": 0.1449998045193772
+      },
+      "ppv": {
+        "mean": 0.8131546699725234,
+        "sd": 0.05389962904684382
+      },
+      "cleared_fraction": {
+        "mean": 0.15680580762250457,
+        "sd": 0.06761420083654418
+      },
+      "missed_urgent_total": 15,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.08,
+          "sensitivity": 0.8837209302325582,
+          "specificity": 0.4666666666666667,
+          "npv": 0.5833333333333334,
+          "ppv": 0.8260869565217391,
+          "cleared_fraction": 0.20689655172413793,
+          "missed_urgent": 5,
+          "n_urgent": 43,
+          "threshold_on_val": 0.08
+        },
+        {
+          "thr": 0.5750000000000001,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.1875,
+          "npv": 0.5,
+          "ppv": 0.75,
+          "cleared_fraction": 0.10344827586206896,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.5750000000000001
+        },
+        {
+          "thr": 0.445,
+          "sensitivity": 0.9047619047619048,
+          "specificity": 0.6666666666666666,
+          "npv": 0.7142857142857143,
+          "ppv": 0.8837209302325582,
+          "cleared_fraction": 0.24561403508771928,
+          "missed_urgent": 4,
+          "n_urgent": 42,
+          "threshold_on_val": 0.445
+        },
+        {
+          "thr": 0.18500000000000003,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.4666666666666667,
+          "npv": 0.875,
+          "ppv": 0.8367346938775511,
+          "cleared_fraction": 0.14035087719298245,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.18500000000000003
+        },
+        {
+          "thr": 0.09,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.2,
+          "npv": 0.6,
+          "ppv": 0.7692307692307693,
+          "cleared_fraction": 0.08771929824561403,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.09
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.7963455149501661,
+        "sd": 0.13181109352556394
+      },
+      "specificity": {
+        "mean": 0.6775,
+        "sd": 0.27794508850170785
+      },
+      "npv": {
+        "mean": 0.5647619047619047,
+        "sd": 0.08918883633099545
+      },
+      "ppv": {
+        "mean": 0.8829061281891472,
+        "sd": 0.07292893497768317
+      },
+      "cleared_fraction": {
+        "mean": 0.32825166364186326,
+        "sd": 0.15781785219031477
+      },
+      "missed_urgent_total": 43,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7674418604651163,
+          "specificity": 0.7333333333333333,
+          "npv": 0.5238095238095238,
+          "ppv": 0.8918918918918919,
+          "cleared_fraction": 0.3620689655172414,
+          "missed_urgent": 10,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.1875,
+          "npv": 0.6,
+          "ppv": 0.7547169811320755,
+          "cleared_fraction": 0.08620689655172414,
+          "missed_urgent": 2,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8571428571428571,
+          "specificity": 0.8,
+          "npv": 0.6666666666666666,
+          "ppv": 0.9230769230769231,
+          "cleared_fraction": 0.3157894736842105,
+          "missed_urgent": 6,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.8,
+          "npv": 0.6,
+          "ppv": 0.918918918918919,
+          "cleared_fraction": 0.3508771929824561,
+          "missed_urgent": 8,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.5952380952380952,
+          "specificity": 0.8666666666666667,
+          "npv": 0.43333333333333335,
+          "ppv": 0.9259259259259259,
+          "cleared_fraction": 0.5263157894736842,
+          "missed_urgent": 17,
+          "n_urgent": 42
+        }
+      ]
+    }
+  },
+  "det_fusion": {
+    "sens>=90": {
+      "sensitivity": {
+        "mean": 0.8198228128460686,
+        "sd": 0.09628630708319295
+      },
+      "specificity": {
+        "mean": 0.6216666666666667,
+        "sd": 0.22076256727785876
+      },
+      "npv": {
+        "mean": 0.5686274509803921,
+        "sd": 0.0817320196104562
+      },
+      "ppv": {
+        "mean": 0.8659234853816133,
+        "sd": 0.06803246615960115
+      },
+      "cleared_fraction": {
+        "mean": 0.296854204476709,
+        "sd": 0.12342636002698382
+      },
+      "missed_urgent_total": 38,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.35500000000000004,
+          "sensitivity": 0.8372093023255814,
+          "specificity": 0.4666666666666667,
+          "npv": 0.5,
+          "ppv": 0.8181818181818182,
+          "cleared_fraction": 0.2413793103448276,
+          "missed_urgent": 7,
+          "n_urgent": 43,
+          "threshold_on_val": 0.35500000000000004
+        },
+        {
+          "thr": 0.47500000000000003,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.375,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7959183673469388,
+          "cleared_fraction": 0.15517241379310345,
+          "missed_urgent": 3,
+          "n_urgent": 42,
+          "threshold_on_val": 0.47500000000000003
+        },
+        {
+          "thr": 0.6,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 0.9333333333333333,
+          "npv": 0.5,
+          "ppv": 0.9655172413793104,
+          "cleared_fraction": 0.49122807017543857,
+          "missed_urgent": 14,
+          "n_urgent": 42,
+          "threshold_on_val": 0.6
+        },
+        {
+          "thr": 0.44,
+          "sensitivity": 0.8571428571428571,
+          "specificity": 0.7333333333333333,
+          "npv": 0.6470588235294118,
+          "ppv": 0.9,
+          "cleared_fraction": 0.2982456140350877,
+          "missed_urgent": 6,
+          "n_urgent": 42,
+          "threshold_on_val": 0.44
+        },
+        {
+          "thr": 0.375,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.6,
+          "npv": 0.5294117647058824,
+          "ppv": 0.85,
+          "cleared_fraction": 0.2982456140350877,
+          "missed_urgent": 8,
+          "n_urgent": 42,
+          "threshold_on_val": 0.375
+        }
+      ]
+    },
+    "sens>=95": {
+      "sensitivity": {
+        "mean": 0.9053156146179402,
+        "sd": 0.11528473237109
+      },
+      "specificity": {
+        "mean": 0.4366666666666667,
+        "sd": 0.3065035798232126
+      },
+      "npv": {
+        "mean": 0.7251165501165501,
+        "sd": 0.2052808306559574
+      },
+      "ppv": {
+        "mean": 0.8291708801052854,
+        "sd": 0.08302647770368497
+      },
+      "cleared_fraction": {
+        "mean": 0.1849364791288566,
+        "sd": 0.1617534080877518
+      },
+      "missed_urgent_total": 20,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.305,
+          "sensitivity": 0.8837209302325582,
+          "specificity": 0.4,
+          "npv": 0.5454545454545454,
+          "ppv": 0.8085106382978723,
+          "cleared_fraction": 0.1896551724137931,
+          "missed_urgent": 5,
+          "n_urgent": 43,
+          "threshold_on_val": 0.305
+        },
+        {
+          "thr": 0.405,
+          "sensitivity": 0.9523809523809523,
+          "specificity": 0.25,
+          "npv": 0.6666666666666666,
+          "ppv": 0.7692307692307693,
+          "cleared_fraction": 0.10344827586206896,
+          "missed_urgent": 2,
+          "n_urgent": 42,
+          "threshold_on_val": 0.405
+        },
+        {
+          "thr": 0.5700000000000001,
+          "sensitivity": 0.7142857142857143,
+          "specificity": 0.9333333333333333,
+          "npv": 0.5384615384615384,
+          "ppv": 0.967741935483871,
+          "cleared_fraction": 0.45614035087719296,
+          "missed_urgent": 12,
+          "n_urgent": 42,
+          "threshold_on_val": 0.5700000000000001
+        },
+        {
+          "thr": 0.275,
+          "sensitivity": 0.9761904761904762,
+          "specificity": 0.4666666666666667,
+          "npv": 0.875,
+          "ppv": 0.8367346938775511,
+          "cleared_fraction": 0.14035087719298245,
+          "missed_urgent": 1,
+          "n_urgent": 42,
+          "threshold_on_val": 0.275
+        },
+        {
+          "thr": 0.225,
+          "sensitivity": 1.0,
+          "specificity": 0.13333333333333333,
+          "npv": 1.0,
+          "ppv": 0.7636363636363637,
+          "cleared_fraction": 0.03508771929824561,
+          "missed_urgent": 0,
+          "n_urgent": 42,
+          "threshold_on_val": 0.225
+        }
+      ]
+    },
+    "default_0.5": {
+      "sensitivity": {
+        "mean": 0.801107419712071,
+        "sd": 0.08625743960824021
+      },
+      "specificity": {
+        "mean": 0.7274999999999999,
+        "sd": 0.18151560998070296
+      },
+      "npv": {
+        "mean": 0.5838095238095238,
+        "sd": 0.08522346243114529
+      },
+      "ppv": {
+        "mean": 0.8959536573925367,
+        "sd": 0.05514516005123191
+      },
+      "cleared_fraction": {
+        "mean": 0.3385359951603146,
+        "sd": 0.10309264818774398
+      },
+      "missed_urgent_total": 42,
+      "urgent_total": 211,
+      "per_fold": [
+        {
+          "thr": 0.5,
+          "sensitivity": 0.7674418604651163,
+          "specificity": 0.6666666666666666,
+          "npv": 0.5,
+          "ppv": 0.868421052631579,
+          "cleared_fraction": 0.3448275862068966,
+          "missed_urgent": 10,
+          "n_urgent": 43
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.9285714285714286,
+          "specificity": 0.4375,
+          "npv": 0.7,
+          "ppv": 0.8125,
+          "cleared_fraction": 0.1724137931034483,
+          "missed_urgent": 3,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.8666666666666667,
+          "npv": 0.6190476190476191,
+          "ppv": 0.9444444444444444,
+          "cleared_fraction": 0.3684210526315789,
+          "missed_urgent": 8,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.8095238095238095,
+          "specificity": 0.8,
+          "npv": 0.6,
+          "ppv": 0.918918918918919,
+          "cleared_fraction": 0.3508771929824561,
+          "missed_urgent": 8,
+          "n_urgent": 42
+        },
+        {
+          "thr": 0.5,
+          "sensitivity": 0.6904761904761905,
+          "specificity": 0.8666666666666667,
+          "npv": 0.5,
+          "ppv": 0.9354838709677419,
+          "cleared_fraction": 0.45614035087719296,
+          "missed_urgent": 13,
+          "n_urgent": 42
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# raw source imagery is never committed (see labels/README.md)
+/raw_data/
+/data/preprocessed/
+/data/manifest*.csv
+/data/features/
+
+# large / regenerable artifacts
+*.pt
+*.pth
+*.pkl
+*.joblib
+!model_weights/caries_detector_yolov8l.pt
+
+# local run logs / scratch
+*.log
+.DS_Store
+Thumbs.db

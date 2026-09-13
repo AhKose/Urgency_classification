@@ -1,0 +1,59 @@
+{
+  "model": "resnet50v2",
+  "fold": 3,
+  "config": {
+    "dropout_rate": 0.3,
+    "unfreeze_level": 1,
+    "lr": 3e-05,
+    "weight_decay": 0.001,
+    "label_smoothing": 0.1,
+    "use_focal_loss": true,
+    "scheduler": "onecycle",
+    "batch_size": 16,
+    "hidden_size": 256,
+    "stage_epochs": [
+      5,
+      15,
+      20
+    ]
+  },
+  "inner": {
+    "f1_macro": 0.6783216783216783,
+    "f1_non_urgent": 0.5384615384615384
+  },
+  "refit_val_f1_macro": 0.5527777777777778,
+  "test_metrics": {
+    "accuracy": 0.7368421052631579,
+    "balanced_accuracy": 0.5857142857142857,
+    "mcc": 0.21732537978733282,
+    "f1_macro": 0.5914954610606784,
+    "f1_weighted": 0.7069177961626475,
+    "precision_urgent": 0.7755102040816326,
+    "recall_urgent": 0.9047619047619048,
+    "f1_urgent": 0.8351648351648352,
+    "support_urgent": 42,
+    "precision_non_urgent": 0.5,
+    "recall_non_urgent": 0.26666666666666666,
+    "f1_non_urgent": 0.34782608695652173,
+    "support_non_urgent": 15,
+    "roc_auc": 0.6396825396825396,
+    "pr_auc_non_urgent": 0.41335351484235505,
+    "pr_auc_urgent": 0.8338907237460846,
+    "confusion_matrix": [
+      [
+        38,
+        4
+      ],
+      [
+        11,
+        4
+      ]
+    ]
+  },
+  "class_count_final_train": [
+    135.0,
+    49.0
+  ],
+  "epochs_done": 16,
+  "minutes": 13.2
+}

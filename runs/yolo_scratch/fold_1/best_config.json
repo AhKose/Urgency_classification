@@ -1,0 +1,23 @@
+{
+  "model": "yolo_scratch",
+  "best_params": {
+    "dropout_rate": 0.5,
+    "unfreeze_level": 1,
+    "lr": 0.0001,
+    "weight_decay": 0.005,
+    "label_smoothing": 0.1,
+    "use_focal_loss": false,
+    "scheduler": "onecycle",
+    "batch_size": 16,
+    "hidden_size": 256,
+    "stage_epochs": [
+      5,
+      15,
+      20
+    ]
+  },
+  "best_inner_f1_macro": 0.425,
+  "best_inner_f1_non_urgent": 0.0,
+  "n_trials": 15,
+  "objective": "f1_macro"
+}

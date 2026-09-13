@@ -1,0 +1,23 @@
+{
+  "model": "yolo_tl",
+  "best_params": {
+    "dropout_rate": 0.5,
+    "unfreeze_level": 1,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.0,
+    "use_focal_loss": true,
+    "scheduler": "plateau",
+    "batch_size": 8,
+    "hidden_size": 256,
+    "stage_epochs": [
+      5,
+      15,
+      20
+    ]
+  },
+  "best_inner_f1_macro": 0.7678442682047584,
+  "best_inner_f1_non_urgent": 0.631578947368421,
+  "n_trials": 15,
+  "objective": "f1_macro"
+}
