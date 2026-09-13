@@ -79,8 +79,6 @@ python -m src.extra_analyses
 python -m src.operating_point
 python -m src.fusion_variants
 python -m src.fig_results
-python -m src.fig_preprocessing
 python -m src.spatial_map
 python -m src.build_results_xlsx
-python -m src.build_label_release   # only needed if you change the labels or manifest
 ```

@@ -16,7 +16,9 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import config as C
 from src.common import imread_gray
-from src.case_ids import case_id_map
+
+# Note: manifest.csv built by src/build_dataset_from_release.py already uses
+# the public case_id as patient_id, so no separate id mapping is needed here.
 
 CONF_LOW = 0.15
 
@@ -34,7 +36,6 @@ def run(n_per_group: int = 3, out: Path | None = None) -> Path:
     pp = pd.concat([pd.read_csv(C.RUN_DIR / "det_fusion" / f"fold_{k}" / "predictions.csv")
                     for k in range(1, 6)], ignore_index=True).set_index("patient_id")
     det = YOLO(str(C.DETECTOR_WEIGHTS))
-    cid_map = case_id_map()
 
     urg = pp[(pp.True_Label == 0) & pp.Correct].sort_values("Prob_urgent", ascending=False).head(n_per_group)
     non = pp[(pp.True_Label == 1) & pp.Correct].sort_values("Prob_urgent").head(n_per_group)
@@ -58,7 +59,7 @@ def run(n_per_group: int = 3, out: Path | None = None) -> Path:
                                    edgecolor=plt.cm.autumn(1 - min(c, 1)), lw=1.2))
         ax.axvline(W / 2, color="cyan", lw=0.7, ls="--")
         ax.axhline(H / 2, color="cyan", lw=0.7, ls="--")
-        ax.set_title(f"{cid_map[pid]}  true={'urgent' if pr.True_Label == 0 else 'non-urgent'}  "
+        ax.set_title(f"{pid}  true={'urgent' if pr.True_Label == 0 else 'non-urgent'}  "
                      f"model P(urgent)={pr.Prob_urgent:.2f}", fontsize=9)
         ax.axis("off")
 
