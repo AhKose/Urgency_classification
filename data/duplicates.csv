@@ -1,6 +1,6 @@
-kept,removed,md5
-normal/11,normal/9,a0baabdca68eda9c0566b09a1a8f0db5
-good/6,good/7,bd3a16f696b4efaf448743019fd4133e
-good/2,good/4,ccb4e6f620173d8fa7e556d7b348c9f7
-good/8,good/9,daeb8aca38817d6cd53479a3fbc77e84
-good/31,normal/35,e7cfaf805bca271bdc884edf202e65b4
+case_id,note,md5
+case_252,two original files (see labels/pediatric_urgency_labels.csv) are pixel-identical for this case,a0baabdca68eda9c0566b09a1a8f0db5
+case_248,two original files (see labels/pediatric_urgency_labels.csv) are pixel-identical for this case,bd3a16f696b4efaf448743019fd4133e
+case_224,two original files (see labels/pediatric_urgency_labels.csv) are pixel-identical for this case,ccb4e6f620173d8fa7e556d7b348c9f7
+case_249,two original files (see labels/pediatric_urgency_labels.csv) are pixel-identical for this case,daeb8aca38817d6cd53479a3fbc77e84
+case_237,two original files (see labels/pediatric_urgency_labels.csv) are pixel-identical for this case,e7cfaf805bca271bdc884edf202e65b4

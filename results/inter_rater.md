@@ -19,18 +19,18 @@ All **287** patients, before adjudication. Rater 3 breaks ties only.
 
 | patient_id | source | rater 1 | rater 2 | consensus (rater 3) |
 |---|---|---|---|---|
-| bad_20 | B | urgent | non_urgent | non_urgent |
-| bad_206 | B | urgent | non_urgent | non_urgent |
-| bad_28 | B | urgent | non_urgent | non_urgent |
-| bad_95 | B | urgent | non_urgent | non_urgent |
-| good_17 | A | non_urgent | urgent | urgent |
-| good_22 | A | non_urgent | urgent | urgent |
-| normal_13 | A | non_urgent | urgent | non_urgent |
-| normal_14 | A | non_urgent | urgent | non_urgent |
-| normal_17 | A | non_urgent | urgent | non_urgent |
-| normal_23 | A | non_urgent | urgent | non_urgent |
-| normal_24 | A | non_urgent | urgent | urgent |
-| normal_36 | B | non_urgent | urgent | non_urgent |
-| normal_40 | B | non_urgent | urgent | non_urgent |
+| case_113 | B | urgent | non_urgent | non_urgent |
+| case_120 | B | urgent | non_urgent | non_urgent |
+| case_134 | B | urgent | non_urgent | non_urgent |
+| case_208 | B | urgent | non_urgent | non_urgent |
+| case_221 | A | non_urgent | urgent | urgent |
+| case_227 | A | non_urgent | urgent | urgent |
+| case_254 | A | non_urgent | urgent | non_urgent |
+| case_255 | A | non_urgent | urgent | non_urgent |
+| case_258 | A | non_urgent | urgent | non_urgent |
+| case_265 | A | non_urgent | urgent | non_urgent |
+| case_266 | A | non_urgent | urgent | urgent |
+| case_278 | B | non_urgent | urgent | non_urgent |
+| case_283 | B | non_urgent | urgent | non_urgent |
 
 _Final consensus label = majority of three. Of the 13 disagreements, rater 3's adjudication changed 7 of rater 1's original labels; the remainder were resolved in rater 1's favour._

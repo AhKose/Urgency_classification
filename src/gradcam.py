@@ -17,6 +17,7 @@ import config as C
 from src.common import imread_gray
 from src.datasets import _to_tensor as _norm
 from src.models import build_model
+from src.case_ids import case_id_map
 
 
 def _cam_for(model, x, target_layer):
@@ -61,6 +62,7 @@ def run(fold: int = 1, n_per_group: int = 3, out: Path | None = None) -> Path:
         preds[~preds.Correct].head(2),
     ]).drop_duplicates("patient_id")
 
+    cid_map = case_id_map()
     fig, axes = plt.subplots(len(picks), 2, figsize=(6, 2.6 * len(picks)))
     for row, (_, pr) in zip(np.atleast_2d(axes), picks.iterrows()):
         p = manifest.loc[pr.patient_id, "preproc_path"]
@@ -68,7 +70,7 @@ def run(fold: int = 1, n_per_group: int = 3, out: Path | None = None) -> Path:
         x = _norm(g).unsqueeze(0).to(device)
         cam, cls, prob = _cam_for(model, x, target_layer)
         row[0].imshow(g, cmap="gray"); row[0].axis("off")
-        row[0].set_title(f"{pr.patient_id}  true={'urgent' if pr.True_Label==0 else 'non-urg'}", fontsize=8)
+        row[0].set_title(f"{cid_map[pr.patient_id]}  true={'urgent' if pr.True_Label==0 else 'non-urg'}", fontsize=8)
         row[1].imshow(g, cmap="gray"); row[1].imshow(cam, cmap="jet", alpha=0.45); row[1].axis("off")
         row[1].set_title(f"pred={'urgent' if cls==0 else 'non-urg'}  p(urgent)={prob[0]:.2f}", fontsize=8)
     fig.suptitle("Grad-CAM (exploratory) — proposed YOLO-TL, fold %d" % fold)

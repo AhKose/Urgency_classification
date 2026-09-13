@@ -15,6 +15,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import config as C
 from src.common import imread_gray
+from src.case_ids import case_id_map
 
 # one urgent, one non-urgent; both good quality
 EXAMPLES = ["bad_5", "normal_5"]
@@ -52,15 +53,18 @@ def run(examples=EXAMPLES, out: Path | None = None) -> Path:
     plt.close(fig)
 
     # also emit individual panels, useful if the journal wants separate files
+    # -- named by the public case_id, never by the internal patient_id
+    cid_map = case_id_map()
     panel_dir = C.RESULT_DIR / "preprocessing_panels"
     panel_dir.mkdir(exist_ok=True)
     for pid in examples:
         r = man.loc[pid]
+        cid = cid_map[pid]
         for tag, key in (("original", "hepsi_path"), ("preprocessed", "preproc_path")):
             g = imread_gray(r[key])
             f, a = plt.subplots(figsize=(6, 3.5))
             a.imshow(g, cmap="gray"); a.axis("off")
-            f.savefig(panel_dir / f"{pid}_{tag}.png", dpi=300,
+            f.savefig(panel_dir / f"{cid}_{tag}.png", dpi=300,
                       bbox_inches="tight", pad_inches=0, facecolor="white")
             plt.close(f)
 
@@ -68,7 +72,7 @@ def run(examples=EXAMPLES, out: Path | None = None) -> Path:
     print("panels in", panel_dir)
     for pid in examples:
         r = man.loc[pid]
-        print(f"\n{pid} ({r['urgency']}, source {r['source']})")
+        print(f"\n{cid_map[pid]} ({r['urgency']}, source {r['source']})")
         print("  original     :", r["hepsi_path"])
         print("  central crop :", r["crop_path"])
         print("  preprocessed :", r["preproc_path"])

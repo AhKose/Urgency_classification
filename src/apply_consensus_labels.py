@@ -22,8 +22,8 @@ import config as C
 
 # consensus (2 of 3) labels that differ from rater 1
 FLIPS = {
-    "good_17": "urgent", "good_22": "urgent", "normal_24": "urgent",
-    "bad_20": "non_urgent", "bad_28": "non_urgent", "bad_95": "non_urgent", "bad_206": "non_urgent",
+    "case_221": "urgent", "case_227": "urgent", "case_266": "urgent",
+    "case_113": "non_urgent", "case_134": "non_urgent", "case_208": "non_urgent", "case_120": "non_urgent",
 }
 INT = {"urgent": 0, "non_urgent": 1}
 

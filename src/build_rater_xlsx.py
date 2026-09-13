@@ -19,16 +19,16 @@ if not _r1_bak:
 man = pd.read_csv(_r1_bak[-1])
 
 RATER2_FLIPS = {
-    "good_17": "urgent", "good_22": "urgent",
-    "normal_13": "urgent", "normal_14": "urgent", "normal_17": "urgent", "normal_23": "urgent",
-    "normal_24": "urgent", "normal_36": "urgent", "normal_40": "urgent",
-    "bad_20": "non_urgent", "bad_28": "non_urgent", "bad_95": "non_urgent", "bad_206": "non_urgent",
+    "case_221": "urgent", "case_227": "urgent",
+    "case_254": "urgent", "case_255": "urgent", "case_258": "urgent", "case_265": "urgent",
+    "case_266": "urgent", "case_278": "urgent", "case_283": "urgent",
+    "case_113": "non_urgent", "case_134": "non_urgent", "case_208": "non_urgent", "case_120": "non_urgent",
 }
 RATER3 = {
-    "good_17": "urgent", "good_22": "urgent", "normal_24": "urgent",
-    "bad_20": "non_urgent", "bad_28": "non_urgent", "bad_95": "non_urgent", "bad_206": "non_urgent",
-    "normal_13": "non_urgent", "normal_14": "non_urgent", "normal_17": "non_urgent",
-    "normal_23": "non_urgent", "normal_36": "non_urgent", "normal_40": "non_urgent",
+    "case_221": "urgent", "case_227": "urgent", "case_266": "urgent",
+    "case_113": "non_urgent", "case_134": "non_urgent", "case_208": "non_urgent", "case_120": "non_urgent",
+    "case_254": "non_urgent", "case_255": "non_urgent", "case_258": "non_urgent",
+    "case_265": "non_urgent", "case_278": "non_urgent", "case_283": "non_urgent",
 }
 PRETTY = {"urgent": "urgent", "non_urgent": "non-urgent"}
 
@@ -185,8 +185,8 @@ for i, (k, v) in enumerate([
     ("Rater 3 agreed with Rater 1", 6),
     ("Final label rule", "majority vote (2 of 3)"),
     ("Consensus labels differing from Rater 1 (used in current analysis)", "7 / 287 (2.4%)"),
-    ("   non-urgent -> urgent", "good_17, good_22, normal_24"),
-    ("   urgent -> non-urgent", "bad_20, bad_28, bad_95, bad_206"),
+    ("   non-urgent -> urgent", "case_221, case_227, case_266"),
+    ("   urgent -> non-urgent", "case_113, case_134, case_208, case_120"),
     ("Class counts - Rater 1 (original)", f"urgent {o['urgent']} / non-urgent {o['non_urgent']}  (2.83:1)"),
     ("Class counts - consensus (2 of 3)", f"urgent {cc['urgent']} / non-urgent {cc['non_urgent']}  ({cc['urgent'] / cc['non_urgent']:.2f}:1)"),
 ], 20):

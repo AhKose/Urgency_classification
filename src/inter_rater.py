@@ -19,10 +19,10 @@ import config as C
 
 # rater 2 disagreements (patient_id -> rater 2's label)
 RATER2_FLIPS = {
-    "good_17": "urgent", "good_22": "urgent",
-    "normal_13": "urgent", "normal_14": "urgent", "normal_17": "urgent",
-    "normal_23": "urgent", "normal_24": "urgent", "normal_36": "urgent", "normal_40": "urgent",
-    "bad_20": "non_urgent", "bad_28": "non_urgent", "bad_95": "non_urgent", "bad_206": "non_urgent",
+    "case_221": "urgent", "case_227": "urgent",
+    "case_254": "urgent", "case_255": "urgent", "case_258": "urgent",
+    "case_265": "urgent", "case_266": "urgent", "case_278": "urgent", "case_283": "urgent",
+    "case_113": "non_urgent", "case_134": "non_urgent", "case_208": "non_urgent", "case_120": "non_urgent",
 }
 
 

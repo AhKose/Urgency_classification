@@ -42,6 +42,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import config as C
+from src.case_ids import case_id_map
 
 SON_DATA = C.ROOT / "Cocuk" / "Son Data"
 SOURCE_DIRS = {"A": "ilk datalar", "B": "yeni datalar"}
@@ -106,9 +107,7 @@ def build() -> pd.DataFrame:
     # 287 consensus labels disagree with the folder a case originally came
     # from). Two rows sharing a case id are the same case, present twice
     # because two pixel-identical original files map to it (see notes).
-    uniq_patients = sorted(man.patient_id.unique())
-    case_id_map = {pid: f"case_{i + 1:03d}" for i, pid in enumerate(uniq_patients)}
-    merged["case_id"] = merged.patient_id.map(case_id_map)
+    merged["case_id"] = merged.patient_id.map(case_id_map())
 
     out = merged[["case_id", "figshare_dataset_title", "figshare_dataset_url",
                  "true_original_subfolder", "true_original_filename", "urgency"]].rename(
