@@ -1,8 +1,6 @@
 # Pediatric Dental Caries Urgency Classification
 
-Code, released labels, and full result artifacts for the paper **"Detect-Then-Count
-and Late Fusion for Pediatric Caries Urgency Classification in Panoramic
-Radiographs."** The task: classify a pediatric panoramic radiograph as
+Code, released labels, and full result artifacts for the paper **"DETECT-THEN-COUNT AND LATE FUSION FOR PEDIATRIC CARIES URGENCY CLASSIFICATION IN PANORAMIC RADIOGRAPHS."** The task: classify a pediatric panoramic radiograph as
 **urgent** or **non-urgent** from its overall radiographic caries burden,
 using only case-level (image-level) labels, no lesion-level annotation.
 
@@ -13,7 +11,7 @@ using only case-level (image-level) labels, no lesion-level annotation.
   outer test fold is scored exactly once, after all hyperparameter selection)
 - Proposed model (**detect-then-count + CNN, late fusion**): **macro-F1
   73.6 ± 4.6%**, **ROC-AUC 86.2 ± 5.4%**, significantly ahead of every
-  end-to-end CNN baseline (see `results/stats_comparison.md`)
+  end-to-end CNN baseline (see `results/mixed_models.md`)
 
 ## Two ways to use this repository
 
