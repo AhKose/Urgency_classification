@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 
 R (>= 4.5) with the `lme4` package is required only for the GLMM analysis
-(`src/mixed_models.py`); everything else is pure Python.
+(`src/mixed_models.py`, Table 5); everything else is pure Python.
 
 ## 2. Obtain the raw images and build the working dataset
 
@@ -72,13 +72,12 @@ skips finished work. Force CPU with `LFR_DEVICE=cpu`.
 ## 5. Aggregate and analyze
 
 ```bash
-python -m src.aggregate
-python -m src.mixed_models
-python -m src.stats_compare
-python -m src.extra_analyses
-python -m src.operating_point
-python -m src.fusion_variants
-python -m src.fig_results
-python -m src.spatial_map
-python -m src.build_results_xlsx
+python -m src.aggregate          # Tables 4, 6; base result files
+python -m src.mixed_models       # Table 5: GLMM (needs R) + cluster bootstrap
+python -m src.extra_analyses     # Table 7 (source subgroup) + trivial baselines
+python -m src.fusion_variants    # Table 7 (fusion-rule and feature-set sensitivity)
+python -m src.operating_point    # operating-point / threshold selection
+python -m src.fig_results        # Figure 5: model comparison bars
+python -m src.fig_model          # Figure 4: fusion architecture diagram
+python -m src.inter_rater        # reference-standard inter-rater agreement statistics
 ```

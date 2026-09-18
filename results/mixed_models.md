@@ -1,6 +1,6 @@
 # CV-aware statistical comparison
 
-Reference = **proposed (YOLO-TL caries-adapted)**. Folds share ~3/4 of training data, so per-fold t-tests under-estimate variance; the analyses below respect the CV structure.
+Reference = **proposed (Detect-then-count + CNN, late fusion)**. Folds share ~3/4 of training data, so per-fold t-tests under-estimate variance; the analyses below respect the CV structure.
 
 ## 1. GLMM — `correct ~ model + (1|patient) + (1|fold)`
 

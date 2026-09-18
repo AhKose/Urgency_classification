@@ -1,6 +1,6 @@
 """Optuna hyper-parameter search -- runs strictly inside one outer fold's
 training data (inner_train to fit, inner_val to score). Identical budget and
-search space for every model (fix #3: fair baseline tuning).
+search space for every model, for a fair comparison across baselines.
 """
 from __future__ import annotations
 

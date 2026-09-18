@@ -15,16 +15,13 @@ PROJECT = ROOT
 
 # Raw source imagery --------------------------------------------------------- #
 # NOT included in this repository (the two source collections have their own
-# public licences on Figshare; see labels/README.md). These paths describe
-# the layout `src/data_prep.py` expects IF you reconstruct the working set
-# yourself from the public collections, to re-run preprocessing from scratch.
-# Most users do not need any of this -- see "Using the released results
-# without re-running anything" in README.md.
+# public licences on Figshare; see labels/README.md). To reconstruct the
+# working set and re-run preprocessing from scratch, download the two public
+# collections and pass their extracted paths to
+# `src/build_dataset_from_release.py --source-a ... --source-b ...`
+# (see docs/REPRODUCING.md). Most users do not need any of this -- see
+# "Using the released results without re-running anything" in README.md.
 RAW_DATA = ROOT / "raw_data"
-HEPSI_DIR = RAW_DATA / "Hepsi"                              # {Bad,Good,Normal}
-CROP_DIR = RAW_DATA / "Croped_All"                          # {bad,good,normal}, dento-alveolar central crops
-SRC_A = RAW_DATA / "ilk datalar"                            # {iyi 1, kötü 1, orta 1} = "Children's teeth - supplement"
-SRC_B = RAW_DATA / "yeni datalar"                           # {iyi 2, kötü 2, orta 2} = "Children's Dental Panoramic Radiographs Dataset"
 DENTEX_DIR = RAW_DATA / "dentex"                            # DENTEX (adult) detection data, for retraining the detector
 
 # Domain-adapted caries detector (YOLOv8-L, single class 'Caries', mAP@0.5~0.70)
@@ -38,8 +35,8 @@ COCO_WEIGHTS = "yolov8l.pt"
 
 # Outputs ------------------------------------------------------------------- #
 DATA_DIR = PROJECT / "data"
-PREPROC_DIR = DATA_DIR / "preprocessed"                    # {urgent, non_urgent} -- not shipped, rebuilt by data_prep.py
-MANIFEST_CSV = DATA_DIR / "manifest.csv"                   # not shipped -- rebuilt by data_prep.py, see README.md
+PREPROC_DIR = DATA_DIR / "preprocessed"                    # {urgent, non_urgent} -- not shipped, rebuilt by src/build_dataset_from_release.py
+MANIFEST_CSV = DATA_DIR / "manifest.csv"                   # not shipped -- rebuilt by src/build_dataset_from_release.py, see README.md
 SPLIT_DIR = PROJECT / "splits"
 SPLIT_JSON = SPLIT_DIR / "nested_cv.json"                  # included: the exact 5 outer folds used for every result in the paper
 FEATURE_DIR = PROJECT / "data" / "features"                # cached YOLO features

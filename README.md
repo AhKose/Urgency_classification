@@ -1,8 +1,8 @@
 # Pediatric Dental Caries Urgency Classification
 
-Code, released labels, and full result artifacts for the paper **"A Transfer
-Learning Approach to Classifying Caries Risk/Urgency for Pediatric
-Dentistry."** The task: classify a pediatric panoramic radiograph as
+Code, released labels, and full result artifacts for the paper **"Detect-Then-Count
+and Late Fusion for Pediatric Caries Urgency Classification in Panoramic
+Radiographs."** The task: classify a pediatric panoramic radiograph as
 **urgent** or **non-urgent** from its overall radiographic caries burden,
 using only case-level (image-level) labels, no lesion-level annotation.
 
@@ -74,11 +74,13 @@ No raw images or downloads required; everything below reads from `runs/` and
 ```bash
 pip install -r requirements.txt
 python -m src.aggregate          # rebuilds results/REPORT.md, aggregated.json, figures
-python -m src.mixed_models       # GLMM (needs R + lme4, see requirements.txt) + cluster bootstrap
-python -m src.stats_compare      # paired per-fold tests
-python -m src.extra_analyses     # calibration, trivial baselines, subgroup, Bayesian t-test
-python -m src.fig_results        # Figure: model comparison bars, ROC/PR curves
-python -m src.build_results_xlsx # reports/results_all_models.xlsx
+python -m src.mixed_models       # Table 5: GLMM (needs R + lme4, see requirements.txt) + cluster bootstrap
+python -m src.extra_analyses     # Table 7 (source subgroup) + trivial baselines
+python -m src.fusion_variants    # Table 7 (fusion-rule and feature-set sensitivity)
+python -m src.operating_point    # operating-point / threshold selection
+python -m src.fig_results        # Figure 5: model comparison bars
+python -m src.fig_model          # Figure 4: fusion architecture diagram
+python -m src.inter_rater        # reference-standard inter-rater agreement statistics
 ```
 
 ## Reproducing the full pipeline

@@ -11,11 +11,3 @@ pandas==2.3.2
 numpy==1.26.4
 matplotlib==3.9.4
 scipy==1.13.1
-openpyxl==3.1.5
-tabulate
-
-# The mixed-effects (GLMM) analysis in src/mixed_models.py additionally
-# requires R (>= 4.5) with the lme4 package installed separately, invoked via
-# src/rscripts/glmm.R. This is not a pip package; install R from
-# https://www.r-project.org/ and then, inside R:
-#   install.packages("lme4")

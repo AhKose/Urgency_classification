@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, the released labels, or the results in this repository, please cite the paper below."
-title: "A Transfer Learning Approach to Classifying Caries Risk/Urgency for Pediatric Dentistry"
+title: "Detect-Then-Count and Late Fusion for Pediatric Caries Urgency Classification in Panoramic Radiographs"
 type: software
 authors:
   - family-names: "Köse"
@@ -9,9 +9,11 @@ authors:
     given-names: "Rahime"
   - family-names: "Yılmaz"
     given-names: "Elif"
+  - family-names: "Ekşioğlu"
+    given-names: "Ender Mete"
 preferred-citation:
   type: article
-  title: "A Transfer Learning Approach to Classifying Caries Risk/Urgency for Pediatric Dentistry"
+  title: "Detect-Then-Count and Late Fusion for Pediatric Caries Urgency Classification in Panoramic Radiographs"
   authors:
     - family-names: "Köse"
       given-names: "Abdullah Huzeyfe"
@@ -19,9 +21,11 @@ preferred-citation:
       given-names: "Rahime"
     - family-names: "Yılmaz"
       given-names: "Elif"
+    - family-names: "Ekşioğlu"
+      given-names: "Ender Mete"
   # TODO: fill in once accepted -- journal, year, volume, pages, doi
   journal: "TODO"
   year: 2026
   doi: "TODO"
 license: MIT
-repository-code: "TODO: add the GitHub URL once created"
+repository-code: "https://github.com/AhKose/Urgency_classification"

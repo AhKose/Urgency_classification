@@ -9,8 +9,7 @@ Model  `det_count`  : ~12 features engineered from the caries detector's outputs
                       -> tuned classifier (logreg / MLP / hist-grad-boosting).
 
 Outputs runs/det_count/fold_<k>/{done.json, predictions.csv, best_config.json}
-in the same format as the CNN runs, so aggregate / mixed_models / extra_analyses
-/ gain_lift pick it up automatically.
+in the same format as the CNN runs, so aggregate picks it up automatically.
 """
 from __future__ import annotations
 

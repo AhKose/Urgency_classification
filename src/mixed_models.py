@@ -164,7 +164,7 @@ def run() -> dict:
 
 def _md(r: dict) -> None:
     L = ["# CV-aware statistical comparison", "",
-         "Reference = **proposed (YOLO-TL caries-adapted)**. Folds share ~3/4 of "
+         "Reference = **proposed (Detect-then-count + CNN, late fusion)**. Folds share ~3/4 of "
          "training data, so per-fold t-tests under-estimate variance; the analyses "
          "below respect the CV structure.", ""]
 

@@ -1,6 +1,6 @@
 """Torch dataset + fast in-memory augmentation (no albumentations / no worker spawn).
 
-Key rule (fix #4): the horizontal mirror / flip and every other augmentation are
+Key rule: the horizontal mirror / flip and every other augmentation are
 applied to TRAIN samples only. Validation and test samples are the plain
 preprocessed image (resize -> 3ch -> ImageNet norm) -- no test-set mirror
 inflation, no train/test correlation through flips.

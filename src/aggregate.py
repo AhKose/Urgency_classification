@@ -119,14 +119,14 @@ def _plot_confusions(data: dict) -> None:
 
 
 def _report(data: dict, table: pd.DataFrame) -> None:
-    L = ["# Leak-free re-analysis — results", ""]
+    L = ["# Results summary", ""]
     L.append("## Protocol")
     L += [
         "- **287 unique patients** (211 urgent / 76 non-urgent, 2.78:1) after removing 5 exact-duplicate images.",
         f"- **Nested CV**: {C.OUTER_FOLDS} patient-level outer folds; hyper-parameters tuned by Optuna "
         f"({C.N_OPTUNA_TRIALS} trials, macro-F1) on an inner 80/20 hold-out of each outer fold's training data only.",
-        "- **Same protocol + same Optuna budget for all three models** (fix #3).",
-        "- Mirror/flip applied to training images only; validation & test use original images (fix #4).",
+        "- Same protocol and Optuna budget applied to every model.",
+        "- Mirror/flip augmentation applied to training images only; validation and test use original images.",
         "- Each outer test fold is evaluated **exactly once**.",
         "",
         "## Headline comparison (mean ± sd over 5 folds, %)",

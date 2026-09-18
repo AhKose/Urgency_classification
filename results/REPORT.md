@@ -1,10 +1,10 @@
-# Leak-free re-analysis — results
+# Results summary
 
 ## Protocol
-- **287 unique patients** (212 urgent / 75 non-urgent, 2.83:1) after removing 5 exact-duplicate images.
+- **287 unique patients** (211 urgent / 76 non-urgent, 2.78:1) after removing 5 exact-duplicate images.
 - **Nested CV**: 5 patient-level outer folds; hyper-parameters tuned by Optuna (15 trials, macro-F1) on an inner 80/20 hold-out of each outer fold's training data only.
-- **Same protocol + same Optuna budget for all three models** (fix #3).
-- Mirror/flip applied to training images only; validation & test use original images (fix #4).
+- Same protocol and Optuna budget applied to every model.
+- Mirror/flip augmentation applied to training images only; validation and test use original images.
 - Each outer test fold is evaluated **exactly once**.
 
 ## Headline comparison (mean ± sd over 5 folds, %)
