@@ -1,8 +1,6 @@
 # Pediatric Dental Caries Urgency Classification
 
-Code, released labels, and full result artifacts for the paper **"A Transfer
-Learning Approach to Classifying Caries Risk/Urgency for Pediatric
-Dentistry."** The task: classify a pediatric panoramic radiograph as
+Code, released labels, and full result artifacts for the paper **"DETECT-THEN-COUNT AND LATE FUSION FOR PEDIATRIC CARIES URGENCY CLASSIFICATION IN PANORAMIC RADIOGRAPHS."** The task: classify a pediatric panoramic radiograph as
 **urgent** or **non-urgent** from its overall radiographic caries burden,
 using only case-level (image-level) labels, no lesion-level annotation.
 
